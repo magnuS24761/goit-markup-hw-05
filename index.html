@@ -27,7 +27,9 @@
           </a>
           <ul class="header-nav-list list">
             <li class="header-nav-item">
-              <a class="header-nav-link link" href="./index.html">Studio</a>
+              <a class="header-nav-link link active" href="./index.html"
+                >Studio</a
+              >
             </li>
             <li class="header-nav-item">
               <a class="header-nav-link link" href="./portfolio.html"
@@ -60,7 +62,9 @@
       <section class="hero">
         <div class="container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
-          <button class="hero-modal-btn" type="button">Order Service</button>
+          <button class="hero-modal-btn" data-modal-open type="button">
+            Order Service
+          </button>
         </div>
       </section>
       <!----------------- company philosophy ------------->
@@ -163,6 +167,7 @@
               <img
                 class="team-list-img"
                 src="./images/team/mark_guerrero.jpg"
+                x
                 alt="man"
                 width="264"
                 height="260"
@@ -432,5 +437,15 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal-window">
+        <button class="modal-close-btn" type="button" data-modal-close>
+          <svg class="modal-close-icon" width="8" height="8">
+            <use href="./images/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
